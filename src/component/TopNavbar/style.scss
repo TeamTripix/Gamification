@@ -1,0 +1,84 @@
+@import "../../variables.scss";
+.topNavbar {
+  width: 100%;
+  height: 6rem;
+  // padding: 0rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    .breadcumb {
+      padding: 0rem 1rem;
+      font-size: 15px;
+      p {
+        span {
+          color: $paraColor;
+        }
+      }
+      h1 {
+        font-size: 15px;
+        margin-top: 5px;
+        color: $fontColor;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    .searchBox {
+      height: 2.5rem;
+      width: 13rem;
+      border: 1px solid $paraColor;
+      border-radius: $cardRadius;
+      background-color: $cardColor;
+      display: flex;
+      align-items: center;
+      .logo {
+        font-size: 22px;
+        margin: 5px;
+      }
+      input {
+        border: none;
+        font-size: 15px;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+    .button-outline {
+      background-color: transparent;
+      border: 1px solid $navLogoColor;
+      border-radius: $cardRadius;
+      padding: 0 2rem;
+      color: $navLogoColor;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin: 0 1rem;
+    }
+    .signIn {
+      display: flex;
+      align-items: center;
+      // margin: 0 1rem;
+      svg {
+        color: $textColor;
+      }
+      p {
+        margin-left: 2px;
+        color: $textColor;
+        font-size: 14px;
+      }
+    }
+    .topbarLogo {
+        margin: 0 1rem;
+      display: flex;
+      align-items: center;
+      svg {
+        color: $textColor;
+      }
+    }
+    .notificationLogo{
+        margin: 0;
+    }
+  }
+}

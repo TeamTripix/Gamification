@@ -1,0 +1,64 @@
+@import "../../../../variables.scss";
+
+.mainLeftCard {
+  width: 35rem;
+  background-color: $cardColor;
+  box-shadow: $cardShadow;
+  border-radius: $radius;
+  .mainLeftCardBody {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: $radius;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      height: 100%;
+      width: 50%;
+      span {
+        color: $cardHeadingColor;
+        margin-top: 5px;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: $fontColor;
+        margin: 0.5rem 0;
+      }
+      p {
+        color: $paraColor;
+        line-height: 1.625;
+        margin-bottom: 3rem;
+      }
+      .readMore {
+        display: flex;
+        align-items: center;
+        p {
+          color: $cardHeadingColor;
+          margin-bottom: 0rem;
+        }
+        svg {
+          color: $fontColor;
+          font-size: large;
+          font-weight: 700;
+          margin-left: 3px;
+        }
+      }
+    }
+
+    .right {
+      // height: 100%;
+      width: 13rem;
+      background-image: $themeColor;
+      border-radius: $radius;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        position: relative;
+        height: 60%;
+        width: 100%;
+      }
+    }
+  }
+}

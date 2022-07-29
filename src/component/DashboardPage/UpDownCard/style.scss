@@ -1,0 +1,55 @@
+@import "../../../variables.scss";
+.baseBody {
+  height: 5rem;
+  width: 14rem;
+  border-radius: $radius;
+  background-color: $cardColor;
+  box-shadow: $cardShadow;
+  padding: 1rem;
+  .cardItems {
+    display: flex;
+    justify-content: space-between;
+    .cardText {
+      p {
+        color: $paraColor;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: $fontColor;
+      }
+      span {
+        
+        font-size: 13px;
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+      .green{
+        color: $profitColor;
+      }
+      .red{
+        color: $lossColor;
+      }
+    }
+    .cardBox{
+        min-width: 48px;
+        height: 48px;
+        background-image: $themeColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $cardRadius;
+        margin-left: 2rem;
+        svg{
+          font-size: 30px;
+          color: $cardColor;
+        }
+    }
+  }
+}

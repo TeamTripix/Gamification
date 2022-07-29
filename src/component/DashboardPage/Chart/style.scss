@@ -1,0 +1,8 @@
+@import "../../../variables.scss";
+
+.chartBox{
+    display: grid;
+    grid-template-columns: 40% 57%;
+    margin: 2rem 0;
+    gap: 3%;
+}

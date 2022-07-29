@@ -1,0 +1,63 @@
+@import "../../../../variables.scss";
+.mainRightCard {
+  background-color: $cardColor;
+  border-radius: $radius;
+  box-shadow: $cardShadow;
+  width: 100%;
+  .cardBody {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: $radius;
+    .cardBodyImage {
+      width: 100%;
+      height: 100%;
+      background: url("https://demos.creative-tim.com/soft-ui-dashboard/assets/img/ivancik.jpg");
+      background-size: cover;
+      border-radius: $radius;
+      overflow: hidden;
+      position: relative;
+      span {
+        position: absolute;
+        background-position: 50%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background-image: linear-gradient(310deg, #141727, #3a416f);
+        background-size: cover;
+        z-index: 1;
+      }
+      .innerText {
+        position: absolute;
+        z-index: 2;
+        padding: 1rem;
+        h2 {
+          color: $cardColor;
+          font-weight: 700;
+          font-size: 20px;
+          margin-bottom: 2rem;
+        }
+        p {
+          color: $cardColor;
+          line-height: 1.625;
+          margin-bottom: 1.5rem;
+        }
+        .readMore {
+          display: flex;
+          align-items: center;
+          p{
+            margin: 0;
+          }
+          svg {
+            color: $cardColor;
+            font-size: large;
+            font-weight: 700;
+            margin-left: 3px;
+          }
+        }
+      }
+    }
+  }
+}

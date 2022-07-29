@@ -1,0 +1,10 @@
+@import "../../../../variables.scss";
+
+.rightChartBox{
+    width: 100%;
+    height: 25rem;
+    background-color: $cardColor;
+    border-radius: $radius;
+    box-shadow: $cardShadow;
+    padding: 1rem;
+}

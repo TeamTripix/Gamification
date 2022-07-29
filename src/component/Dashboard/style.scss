@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+.base {
+  background-color: $base-backgroundColor;
+  // width: 100vw;
+  display: flex;
+  .rightBase{
+    margin-left: 15rem;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
